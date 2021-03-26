@@ -1,10 +1,10 @@
 import React from 'react'
-import { BrowserRouter, Route, Link } from "react-router-dom"
-class Header extends React.Component {
-    render() {
-        return (
+import { BrowserRouter, Route, Link } from "react-router-dom";
+class Header extends React.Component{
+    render(){
+        return(
             <div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,19 +13,17 @@ class Header extends React.Component {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <Link to="/">Home</Link>
+         <Link to="/">Home</Link>
         </li>
         <li class="nav-item">
-        <Link to="/About">About</Link> 
+        <Link to="/About">About</Link>
         </li>
         <li class="nav-item">
-        <Link to="/Contact">Contact</Link> 
+        <Link to="/About">Contact</Link>
         </li>
         <li class="nav-item">
-        <Link to="/Login">Login</Link>
+        <Link to="/LogIn">LogIn</Link>
         </li>
-        
-        
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -38,8 +36,4 @@ class Header extends React.Component {
         )
     }
 }
-
-
-
-
 export default Header
